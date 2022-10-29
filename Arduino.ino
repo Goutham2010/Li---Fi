@@ -15,11 +15,11 @@ void setup() {
   lcd.begin(16,2);
   lcd.clear();
   lcd.print("LiFi Project");
-  delay(3000);
+  delay(5000);
   lcd.clear();
-  lcd.print("Send any message");
+  lcd.print("Li-Fi by Goutham");
   lcd.setCursor(0,1);
-  lcd.print("from LiFi App..");
+  lcd.print("and Chiranthan");
   delay(3000);
 }
 
