@@ -16,7 +16,7 @@ void setup() {
   lcd.clear();
   lcd.print("Namaste Sir");
   lcd.setCursor(0,1);
-  lcd.print("Madam");
+  lcd.print("or Madam");
   delay(5000);
   lcd.clear();
   lcd.print("LiFi Project");
