@@ -20,7 +20,7 @@ void setup() {
   delay(5000);
   lcd.clear();
   lcd.print("LiFi Project");
-  delay(5000);
+  delay(3000);
   lcd.clear();
   lcd.print("Li-Fi by Goutham");
   lcd.setCursor(0,1);
