@@ -22,9 +22,9 @@ void setup() {
   lcd.print("LiFi Project");
   delay(3000);
   lcd.clear();
-  lcd.print("Li-Fi by Goutham");
+  lcd.print("By Chiranthan");
   lcd.setCursor(0,1);
-  lcd.print("and Chiranthan");
+  lcd.print("and Goutham");
   delay(3000);
 }
 
