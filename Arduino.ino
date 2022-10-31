@@ -13,6 +13,10 @@ void setup() {
   Serial.begin(9600);
   pinMode(ldr, INPUT_PULLUP);
   lcd.begin(16,2);
+  lcd.print("Welcome to Scien");
+  lcd.setCursor(0,1);
+  lcd.print("-ce Exhibition");
+  delay(5000);
   lcd.clear();
   lcd.print("Namaste Sir");
   lcd.setCursor(0,1);
