@@ -26,6 +26,14 @@ void setup() {
   lcd.print("LiFi Project");
   delay(3000);
   lcd.clear();
+  lcd.print("Class 7th B");
+  delay(2000);
+  lcd.clear();
+  lcd.print("Class Teacher");
+  lcd.setCursor(0,1);
+  lcd.print("Deepika Ma'am");
+  delay(3000);
+  lcd.clear();
   lcd.print("By Chiranthan");
   lcd.setCursor(0,1);
   lcd.print("and Goutham");
