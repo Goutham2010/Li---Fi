@@ -1,8 +1,11 @@
 #include<LiquidCrystal.h>
 
-LiquidCrystal lcd (2, 3, 4, 5, 6, 7);
+int ir = 10;
+int buzzer = 8;
+const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2, ct = 9;
+LiquidCrystal lcd (rs, en, d4, d5, d6, d7);
 
-#define ldr 8
+#define ldr 7
 
 int val;
 int val2;
@@ -10,39 +13,40 @@ String duration;
 
 void setup() {
   // put your setup code here, to run once:
+  analogWrite(ct,50);
   Serial.begin(9600);
   pinMode(ldr, INPUT_PULLUP);
+  pinMode(ir, INPUT);
+  pinMode(buzzer, OUTPUT);
+  digitalWrite(buzzer, HIGH);
   lcd.begin(16,2);
   lcd.print("Namaste Sir");
   lcd.setCursor(0,1);
   lcd.print("or Madam");
-  delay(2000);
+  delay(4000);
   lcd.clear();
   lcd.print("Welcome to Scie-");
   lcd.setCursor(0,1);
   lcd.print("nce Exhibition");
   delay(3000);
   lcd.clear();
-  lcd.print("LiFi Project");
-  delay(2000);
-  lcd.setCursor(0,1);
-  lcd.clear();
-  lcd.print("Class 7th B");
-  delay(2000);
-  lcd.clear();
-  lcd.print("Class Teacher");
-  lcd.setCursor(0,1);
-  lcd.print("Deepika Ma'am");
-  delay(2000);
-  lcd.clear();
   lcd.print("By Chiranthan");
   lcd.setCursor(0,1);
   lcd.print("and Goutham");
   delay(3000);
+  lcd.clear();
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
+  int irStatus = digitalRead(ir);
+  if (irStatus == 1){
+  digitalWrite(buzzer, HIGH);
+  }
+
+  else{
+    digitalWrite(buzzer, LOW);
+  }
   int val = digitalRead(ldr);
   while(val == 0)
   {
