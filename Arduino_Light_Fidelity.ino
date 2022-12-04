@@ -56,11 +56,13 @@ void loop() {
     {
       Serial.println("Received message: hi");
       lcd.clear();
+      lcd.clear();
       lcd.print("hi");
     }
     if(duration == "0001")
     {
       Serial.println("Received message: hello");
+      lcd.clear();
       lcd.clear();
       lcd.print("hello");
     }
@@ -68,11 +70,13 @@ void loop() {
     {
       Serial.println("Received message: how are you?");
       lcd.clear();
+      lcd.clear();
       lcd.print("how are you?");
     }
     if(duration == "000001")
     {
       Serial.println("Received message: I am fine");
+      lcd.clear();
       lcd.clear();
       lcd.print("I am fine");
     }
@@ -80,17 +84,20 @@ void loop() {
     {
       Serial.println("Received message: ok");
       lcd.clear();
+      lcd.clear();
       lcd.print("ok");
     }
     if(duration == "00000001")
     {
       Serial.println("Received message: good morning");
       lcd.clear();
+      lcd.clear();
       lcd.print("good morning");
     }
     if(duration == "000000001")
     {
       Serial.println("Received message: good afternoon");
+      lcd.clear();
       lcd.clear();
       lcd.print("good afternoon");
     }
@@ -104,11 +111,13 @@ void loop() {
     {
       Serial.println("Received message: thank you");
       lcd.clear();
+      lcd.clear();
       lcd.print("thank you");
     }
     if(duration == "000000000001")
     {
       Serial.println("Received message: sorry");
+      lcd.clear();
       lcd.clear();
       lcd.print("sorry");
     }
